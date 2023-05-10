@@ -1,0 +1,17 @@
+form{
+    height: 50vh;
+    width: 50vw;
+}
+/* label{
+    width: 20px;
+} */
+input{
+    height: 5%;
+    width: 80%;
+    gap: 2%;
+    margin: 1%;
+}
+button{
+    margin-top: 5%;
+    margin-left: 5%;
+}

@@ -1,0 +1,9 @@
+.button_nav{
+    height: 50px;
+    width: 150px;
+    background-color: blue;
+    border-radius: 10px;
+    border: solid 2px;
+    font-size: large;
+    color: white;
+}
