@@ -35,7 +35,7 @@ const Login = () => {
         <br />
         <input type="password" id="password" {...register("password", {required: true})} />
         <br />
-        <button type="submit">Logearse</button>
+        <button className="button_logearse" type="submit">Logearse</button>
     </form>
   
   )

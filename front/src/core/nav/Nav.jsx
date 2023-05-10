@@ -13,7 +13,7 @@ const Nav = () => {
       <nav>
         <ul>
             <li>
-                <Link to="/">Home</Link>
+                <Link to="/">家</Link>
             </li>
             {jwt && (
             <>

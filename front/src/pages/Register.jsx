@@ -36,7 +36,7 @@ const Register = () => {
       <option value="🐯">🐯"</option>
     </select> */}
     <br />
-    <button type="submit">Registrarse</button>
+    <button className="button_registrarse" type="submit">Registrarse</button>
 </form>
   )
 }

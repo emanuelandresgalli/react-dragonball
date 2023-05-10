@@ -28,7 +28,7 @@ export const ButtonLogout = () => {
         localStorage.removeItem("token");
         localStorage.removeItem("user");
         setJwt(null);
-        navigate("/login");
+        navigate("/");
       }
     });
   };
