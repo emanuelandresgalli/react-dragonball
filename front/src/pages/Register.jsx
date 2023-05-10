@@ -15,7 +15,7 @@ const Register = () => {
     navigate("/login")
   }
   return (
-    <form onSubmit={handleSubmit(onSubmit)}>
+    <form className="form_login" onSubmit={handleSubmit(onSubmit)}>
     <label htmlFor="name">Name:</label>
     <br />
     <input type="name" id="name" {...register("name", {required: true})} />
@@ -28,13 +28,13 @@ const Register = () => {
     <br />
     <input type="password" id="password" {...register("password", {required: true})} />
     <br />
-    <label htmlFor="avatar">Avatar</label>
-    <br />
-    <select name="avatar" id="avatar" {...register("avatar", {required: true})} >
+    {/* <label htmlFor="avatar">Avatar</label>
+    <br /> */}
+    {/* <select name="avatar" id="avatar" {...register("avatar", {required: true})} >
       <option value="😎">😎</option>
       <option value="🤖">🤖"</option>
       <option value="🐯">🐯"</option>
-    </select>
+    </select> */}
     <br />
     <button type="submit">Registrarse</button>
 </form>

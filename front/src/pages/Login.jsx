@@ -3,12 +3,14 @@ import { JwtContext } from "../context/jwtContext"
 import {useForm} from "react-hook-form"
 import './Login.css'
 import { API } from "../../services/Api"
-// import jwt from 'jsonwebtoken';
+import { useNavigate } from "react-router-dom"
+// import {video} from "../assets/abstract-son-goku-super-saiyan-blue-dragon-ball-super-moewalls.com.mp4"
+//  import jwt from 'jsonwebtoken';
 
 
 const Login = () => {
      const {setJwt} = useContext(JwtContext)
-
+     const navigate = useNavigate();
     const {register, handleSubmit} = useForm();
     const onSubmit = (formData) => {
         // console.log(formData);
@@ -17,10 +19,13 @@ const Login = () => {
               localStorage.setItem("token", res.data.accessToken)
           localStorage.setItem("token", res.data.user.name)
               setJwt(localStorage.getItem("token"))
+              navigate('/gallery');
         })
     }
   return (
-    <form onSubmit={handleSubmit(onSubmit)}>
+
+ 
+    <form className="form_login" onSubmit={handleSubmit(onSubmit)}>
 
         <label htmlFor="email">Email:</label>
         <br />
@@ -32,6 +37,7 @@ const Login = () => {
         <br />
         <button type="submit">Logearse</button>
     </form>
+  
   )
 }
 

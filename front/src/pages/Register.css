@@ -6,7 +6,7 @@ form{
     width: 20px;
 } */
 input{
-    height: 5%;
+    height: 8%;
     width: 80%;
     gap: 2%;
     margin: 1%;
@@ -18,4 +18,8 @@ button{
 option{
     height: 5px;
     width: 5px;
+}
+.form_login{
+    border: solid 2px black;
+    border-radius: 10px;
 }
