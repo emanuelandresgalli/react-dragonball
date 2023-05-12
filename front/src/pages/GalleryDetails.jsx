@@ -30,11 +30,10 @@ const GalleryDetail = () => {
                       <h3>{card.country}</h3>
                     </div>
                     <img className="img_details" src={card.image} alt="{card.name}" />
-                    <div className="contenedor_footer_imagen">
-                    </div>
                   </figure>
                   <div className="contenedor_texto">
                     <h1 className="titulo_nombre">{card.name}</h1>
+                    <div className="description_size">
                     <br />
                     <p>{card.description1}</p>
                     <br />
@@ -43,6 +42,7 @@ const GalleryDetail = () => {
                     <p>{card.description3}</p>
                     <br />
                     <p>{card.description4}</p>
+                    </div>
                   </div>
                 </div>
               </Link>

@@ -35,6 +35,3 @@ export const ButtonLogout = () => {
 
 return <button className="button_nav" onClick={logout}>LogOut</button>;
   };
-
-  
-// };

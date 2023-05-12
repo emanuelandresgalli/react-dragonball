@@ -1,7 +1,10 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import './Gallery.css'
+import './Gallery.css';
+// import { Carousel } from 'react-bootstrap';
+// import 'bootstrap/dist/css/bootstrap.min.css';
+// import Carousel from 'react-bootstrap/Carousel';
 
 const Gallery = () => {
   const [characters, setCharacters]= useState([])
@@ -19,12 +22,12 @@ const Gallery = () => {
    <div className="gallery">
      {characters.map((card)=>(
         <Link key={card.id} to={`${card.id}`}>
-          
+         
           <figure className="contenedor_gallery" >
             <h3 className="gallery_titulo">{card.name}</h3>
             <img className="gallery_img" src={card.image} alt="{card.name}" />
           </figure>
-        
+      
         </Link>
     ))}
   </div>

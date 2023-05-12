@@ -4,13 +4,13 @@ body{
 .contenedor_details{
     background-color: blue;
     padding-top: 2%;
-    margin-top: 2%;
+    margin-top: 5%;
     margin-bottom: 2%;
     border: solid 2px;
     border-radius: 5px;
     background-size: cover;
-    height: 80%;
-    width: 40%;
+    height: 520px;
+    width: 350px;
     display: inline-block;
     justify-content: flex-start;
     text-align: center;
@@ -23,8 +23,8 @@ body{
     margin-bottom: 2%;
     border: solid;
     border-radius: 10px;
-    height:80%;
-    width: 80%;
+    height:450px;
+    width: 330px;
     object-fit: cover;
 }
 p{
@@ -46,8 +46,14 @@ p{
     padding-top: 10vh;
     padding-left: 5vw;
     padding-right: 5vw;
+    padding-bottom: 5vh;
     text-align: center;
+   
   }
   .titulo_nombre{
     font-size: 70px;
   }
+  /* .description_size{
+    height: 100vh;
+  } */
+

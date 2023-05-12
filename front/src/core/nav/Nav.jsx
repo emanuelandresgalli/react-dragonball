@@ -1,4 +1,4 @@
-// import React from 'react'
+import React from 'react'
 import { useContext } from 'react'
 import './Nav.css'
 import { Link } from 'react-router-dom'
@@ -11,7 +11,7 @@ const Nav = () => {
   return (
    
       <nav>
-        <ul>
+        <ul className='contenedor_li'>
             <li>
                 <Link to="/">家</Link>
             </li>
@@ -32,6 +32,11 @@ const Nav = () => {
             </li>
             <li>
               <Link to="/register">Register</Link>
+            </li>
+            <li>
+              <span className='nav-toggle'></span>
+              <span></span>
+              <span></span>
             </li>
           </>
         )}

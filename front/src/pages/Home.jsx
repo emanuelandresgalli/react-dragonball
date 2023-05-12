@@ -6,7 +6,7 @@
 const Home = () => {
   return (
     // <h1>Home</h1>
-    <div>
+    <div className="home">
     <Link  to="/gallery">
         <div className="background-video">
       <video autoPlay loop muted>

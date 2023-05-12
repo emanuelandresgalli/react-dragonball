@@ -5,7 +5,7 @@ import './Login.css'
 import { API } from "../../services/Api"
 import { useNavigate } from "react-router-dom"
 // import {video} from "../assets/abstract-son-goku-super-saiyan-blue-dragon-ball-super-moewalls.com.mp4"
-//  import jwt from 'jsonwebtoken';
+  // import jwt from 'jsonwebtoken';
 
 
 const Login = () => {
@@ -36,6 +36,7 @@ const Login = () => {
         <input type="password" id="password" {...register("password", {required: true})} />
         <br />
         <button className="button_logearse" type="submit">Logearse</button>
+        
     </form>
   
   )
